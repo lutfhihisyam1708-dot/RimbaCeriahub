@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rimba Ceria – Flora & Fauna Indonesia</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+  <div class="logo"><img src="logo-rimba-transparent.png" alt="Logo Rimba Ceria">Rimba Ceria</div>
+  <nav>
+    <a href="#hewan">Hewan</a>
+    <a href="#tumbuhan">Tumbuhan</a>
+    <a href="#pelestarian">Mengapa Jaga Hutan?</a>
+    <a href="#kuis" class="pill">Mulai Quis</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="txt">
+      <span class="badge">Untuk anak 6–12 tahun</span>
+      <h1>Yuk, kenalan dengan hewan &amp; tumbuhan Indonesia!</h1>
+      <p>Jelajahi hutan, savana, dan rawa. Cari tahu di mana mereka tinggal, apa makanannya, dan fakta serunya.</p>
+      <div class="btns">
+        <a class="btn green" href="#hewan">Jelajahi Hewan</a>
+        <a class="btn" href="#tumbuhan">Jelajahi Tumbuhan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="forest-page" id="pelestarian">
+  <section class="forest-hero">
+    <div class="wrap">
+      <span class="badge">Kenali alam, lindungi masa depan</span>
+      <h1>Mengapa Kita Harus Menjaga Hutan dan Keanekaragaman Hayati Indonesia?</h1>
+      <p>Hutan adalah rumah bagi banyak kehidupan dan salah satu sumber kehidupan yang sangat penting bagi manusia, hewan, dan tumbuhan.</p>
+    </div>
+  </section>
+
+  <section class="forest-content wrap">
+    <article class="forest-card">
+      <h2>Hutan, sumber kehidupan</h2>
+      <p>Hutan membantu menghasilkan oksigen, menjaga keseimbangan iklim, menyimpan air, serta menjadi habitat bagi berbagai jenis flora dan fauna. Indonesia memiliki kekayaan alam yang luar biasa, mulai dari tumbuhan unik hingga hewan langka yang tidak ditemukan di negara lain.</p>
+    </article>
+
+    <article class="forest-card">
+      <h2>Semua kehidupan saling terhubung</h2>
+      <p>Menjaga hutan dan melindungi hewan serta tumbuhan berarti menjaga keseimbangan ekosistem dan keberlangsungan kehidupan. Jika hutan rusak, banyak hewan kehilangan tempat tinggal, tumbuhan terancam punah, dan manusia juga dapat merasakan dampaknya, seperti banjir, kekeringan, serta perubahan iklim.</p>
+    </article>
+
+    <article class="forest-card" id="aksi">
+      <h2>Hal sederhana yang bisa kita lakukan</h2>
+      <p>Kita dapat menunjukkan kepedulian terhadap alam dengan melakukan hal-hal sederhana:</p>
+      <ul>
+        <li>Tidak membuang sampah sembarangan.</li>
+        <li>Menanam dan merawat pohon.</li>
+        <li>Tidak merusak tumbuhan.</li>
+        <li>Mendukung pelestarian satwa liar.</li>
+      </ul>
+    </article>
+
+    <div class="forest-callout">
+      <h2>Mari jaga kekayaan alam Indonesia!</h2>
+      <p>Mari kita bersama-sama menjaga hutan, melindungi flora dan fauna Indonesia, dan melestarikan kekayaan alam untuk generasi mendatang. Alam bukan hanya untuk kita nikmati, tetapi juga untuk kita jaga.</p>
+    </div>
+  </section>
+</section>
+
+<section class="info wrap">
+  <div style="background:#CDEFD8"><b>Habitat</b><p>Di mana mereka tinggal</p></div>
+  <div style="background:#FFE0B8"><b>Makanan</b><p>Apa yang mereka makan</p></div>
+  <div style="background:#E8DBFF"><b>Ciri Unik</b><p>Yang bikin mereka istimewa</p></div>
+  <div style="background:#FFF1B8"><b>Fakta Unik</b><p>Wah, ternyata begitu!</p></div>
+</section>
+
+<section class="search-panel wrap" aria-label="Pencarian hewan dan tumbuhan">
+  <label for="speciesSearch">Cari nama hewan atau tumbuhan</label>
+  <input id="speciesSearch" type="search" placeholder="Contoh: Komodo, Rafflesia, Orangutan" autocomplete="off">
+  <p class="search-status" id="searchStatus" aria-live="polite">Menampilkan semua hewan dan tumbuhan.</p>
+</section>
+
+<section id="hewan">
+  <div class="wrap">
+    <h2>25 Hewan Indonesia</h2>
+    <p class="sub">Dari hutan Sumatra sampai Papua, kenali hewan khas negeri kita.</p>
+    <div class="grid" id="gridHewan"></div>
+    <p class="empty-state" id="emptyHewan" hidden>Tidak ada hewan yang cocok dengan pencarian.</p>
+  </div>
+</section>
+
+<section id="tumbuhan" style="background:#EAF8E0">
+  <div class="wrap">
+    <h2>25 Tumbuhan Indonesia</h2>
+    <p class="sub">Dari bunga raksasa sampai tanaman rempah dan pohon kayu.</p>
+    <div class="grid" id="gridTumbuhan"></div>
+    <p class="empty-state" id="emptyTumbuhan" hidden>Tidak ada tumbuhan yang cocok dengan pencarian.</p>
+  </div>
+</section>
+
+<section id="kuis">
+  <div class="quiz">
+    <div>
+      <h2>Sudah siap main kuis?</h2>
+      <p>Jawab pertanyaan seru, kumpulkan bintang, dan jadi Penjaga Rimba!</p>
+    </div>
+    <a class="btn" href="quis.html" style="background:#fff">Main Kuis</a>
+  </div>
+</section>
+
+<footer>
+  Rimba Ceria · Belajar sambil menjaga alam Indonesia
+  <small>&copy; 2026 Rimba Ceria. Hak cipta dilindungi.</small>
+</footer>
+
+<a class="quiz-float" href="quis.html">Mulai Quis</a>
+
+<dialog class="detail-dialog" id="detailDialog" aria-labelledby="dialogTitle">
+  <button class="dialog-close" type="button" aria-label="Tutup informasi">&times;</button>
+  <div class="dialog-content" id="dialogContent"></div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
